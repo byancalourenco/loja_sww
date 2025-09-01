@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+/* botões */
+
+.btn-primary.custom-btn {
+    background-color: #6f00ff; 
+    border-color: #6f00ff; 
+    color: #fff;
+}
+
+.btn-group a {
+    margin: 0 10px;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn-group a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button.btn{
+     margin: 0 10px;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+button.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* container */
+
+.container {
+    margin-top: 50px;
+}
+
+/* tabela - listar_produtos.php */
+
+table {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #343a40;
+    color: #fff;}
+
+th, td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* forms */
+
+label {
+    font-weight: bold;
+    color: #495057;
+}
+
+.form-control {
+    border-radius: 6px;
+}
+
+.info-id {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    color: #6c757d;
+}

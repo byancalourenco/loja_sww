@@ -2,7 +2,8 @@
     include 'pedaco.php';
 ?>
 
-    <!--  -->
+    <link rel="stylesheet" href="style.css">
+
 
     <div class="container">
         <table class="table">
@@ -35,8 +36,8 @@
                     echo "
                     <td>
                         <div class='btn-group' role='group'>
-                            <a href='form_atualiza.php?id=XXX' type='button' class='btn btn-danger'>Atualizar</a>
-                            <a href='#' type='button' class='btn btn-warning'>Apagar</a>
+                            <a href='form_atualiza.php?id=XXX' type='button' class='btn btn-primary btn-lg custom-btn me-3'>Atualizar</a>
+                            <a href='#' type='button' class='btn btn-secondary btn-lg custom-btn'>Apagar</a>
                         </div>
                     </td>
                     ";
