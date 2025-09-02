@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 01-Set-2025 às 23:43
--- Versão do servidor: 10.4.32-MariaDB
--- versão do PHP: 8.2.12
+-- Tempo de geração: 02-Set-2025 às 13:46
+-- Versão do servidor: 10.4.22-MariaDB
+-- versão do PHP: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -34,21 +34,22 @@ CREATE TABLE `produtos` (
   `nome` varchar(255) NOT NULL,
   `preco` decimal(10,2) NOT NULL,
   `quantidade` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `produtos`
 --
 
 INSERT INTO `produtos` (`id`, `nome`, `preco`, `quantidade`) VALUES
-(1, 'lousa enganadora', 1599.00, 3),
-(2, 'camiseta', 100.00, 10),
-(3, 'celular', 5223.90, 132),
-(4, 'tablet da hello kitty', 2400.50, 5),
-(5, 'boneco esnupi', 1.99, 23),
-(6, 'tênis', 700.99, 45),
-(7, 'calça', 67.98, 56),
-(8, 'mesa', 1200.00, 7);
+(1, 'Lousa verdadeira', '1599.00', 3),
+(2, 'Camiseta', '100.00', 10),
+(3, 'Celular', '5223.90', 132),
+(4, 'Tablet da hello kitty', '2400.50', 5),
+(5, 'Boneco esnupi', '1.99', 23),
+(6, 'Tênis', '700.99', 45),
+(7, 'Calça', '67.98', 56),
+(8, 'Mesa', '1200.00', 7),
+(9, 'Lego ', '120.89', 89);
 
 --
 -- Índices para tabelas despejadas
@@ -68,7 +69,7 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
