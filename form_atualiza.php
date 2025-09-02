@@ -1,5 +1,6 @@
 <?php
     include 'pedaco.php';
+    $id = $_GET['id'];
 ?>
 
     <link rel="stylesheet" href="style.css">
@@ -8,28 +9,36 @@
         <div class="intro-box p-5 rounded-3 shadow">
             <h3 class="mb-4">Formulário - atualizar produtos</h3>
 
-            <form action="atualizar.php" method="POST">
+            <form action="atualizar.php?id= <?php echo $id; ?>" method="POST">
 
                 <?php
         
-                    $id = $_GET['id'];
-                    echo "valor passado: $id";
+                    // echo "valor passado: $id";
+
+                    // listar.php ⬇
+
+                    require 'conexao.php';
+
+                    // pegar o valor do id e colocar aqui
+                    $sql = "SELECT * FROM produtos WHERE id = $id";
+                    $stmt = $pdo->query($sql);
+                    $produto = $stmt->fetch(PDO::FETCH_ASSOC);
         
                 ?>
                 
                 <div class="mb-3 text-start">
                     <label for="nome" class="form-label">Nome:</label>
-                    <input type="text" class="form-control" name="nome" id="nome">
+                    <input type="text" value="<?php echo $produto['nome']; ?>" class="form-control" name="nome_novo" id="nome">
                 </div>
 
                 <div class="mb-3 text-start">
                     <label for="preco" class="form-label">Preço:</label>
-                    <input type="text" class="form-control" name="preco" id="preco">
+                    <input type="text" value="<?php echo $produto['preco']; ?>" class="form-control" name="preco_novo" id="preco">
                 </div>
 
                 <div class="mb-4 text-start">
                     <label for="quantidade" class="form-label">Quantidade:</label>
-                    <input type="text" class="form-control" name="quantidade" id="quantidade">
+                    <input type="text" value="<?php echo $produto['quantidade']; ?>" class="form-control" name="quantidade_novo" id="quantidade">
                 </div>
 
                 <button type="submit" class="btn btn-primary btn-lg custom-btn">Atualizar</button>
