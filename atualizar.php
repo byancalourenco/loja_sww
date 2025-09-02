@@ -21,7 +21,8 @@
     $stmt->bindParam(':quantidade_novo', $quantidade_novo);
 
     if ($stmt->execute()) {
-        echo "Produto atualizado com sucesso!";
+        // echo "Produto atualizado com sucesso!";
+        header("location: listar_produtos.php");
     } else {
         echo "Erro ao atualizar produto.";
     }

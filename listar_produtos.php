@@ -37,7 +37,7 @@
                     <td>
                         <div class='btn-group' role='group'>
                             <a href='form_atualiza.php?id=" . $produto['id'] . "' type='button' class='btn btn-primary btn-lg custom-btn me-3'>Atualizar</a>
-                            <a href='#' type='button' class='btn btn-secondary btn-lg custom-btn'>Apagar</a>
+                            <a href='excluir.php' type='button' class='btn btn-secondary btn-lg custom-btn'>Apagar</a>
                         </div>
                     </td>
                     ";
