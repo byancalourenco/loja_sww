@@ -2,6 +2,12 @@
     include 'pedaco.php';
 ?>
 
+    <div class="d-flex justify-content-center align-items-center">
+        <a href="index.php" class="btn btn-secondary btn-sm">
+            <i class="fa-solid fa-arrow-left me-2"></i> Voltar à página anterior
+        </a>
+    </div>
+
     <link rel="stylesheet" href="style.css">
 
     <div class="container py-5 text-center">

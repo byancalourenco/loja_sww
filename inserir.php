@@ -20,8 +20,8 @@
 
     // mensagens 
     if ($stmt->execute()) {
-    echo "Produto inserido com sucesso!";
+        header("Location: acao_confirmada.php");
     } else {
-    echo "Erro ao inserir produto.";
+        header("Location: acao_falha.php");    
     }
 ?>

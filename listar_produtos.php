@@ -2,6 +2,12 @@
     include 'pedaco.php';
 ?>
 
+    <div class="d-flex justify-content-center align-items-center">
+        <a href="index.php" class="btn btn-secondary btn-sm">
+            <i class="fa-solid fa-arrow-left me-2"></i> Voltar à página anterior
+        </a>
+    </div>
+
     <link rel="stylesheet" href="style.css">
 
 
@@ -37,7 +43,7 @@
                     <td>
                         <div class='btn-group' role='group'>
                             <a href='form_atualiza.php?id=" . $produto['id'] . "' type='button' class='btn btn-primary btn-lg custom-btn me-3'>Atualizar</a>
-                            <a href='excluir.php' type='button' class='btn btn-secondary btn-lg custom-btn'>Apagar</a>
+                            <a href='excluir.php?id=" . $produto['id'] . "' type='button' class='btn btn-secondary btn-lg custom-btn'>Apagar</a>
                         </div>
                     </td>
                     ";
@@ -46,6 +52,9 @@
             ?>
             </tbody>
         </table>
+
+        
+
     </div>
 
     <!-- cdn - js bootstrap -->

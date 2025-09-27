@@ -5,6 +5,18 @@
 }
 
 /* botões */
+.btn-secondary{
+    background-color: #6f00ff;
+    border-color: #6f00ff;
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn-secondary:hover{
+    background-color: #6f00ff;
+    border-color: #6f00ff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 .btn-primary.custom-btn {
     background-color: #6f00ff; 
@@ -39,7 +51,7 @@ button.btn:hover {
 /* container */
 
 .container {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 /* tabela - listar_produtos.php */
